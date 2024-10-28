@@ -63,3 +63,9 @@ class GuitarPedal(Product):
     """represents a guitar pedal product"""
     def __init__(self, brand, model, serial_number, wholesale_price, selling_price, used, color, effect):
         super().__init__(self, brand, model, serial_number, wholesale_price, selling_price, used, color)
+        self._effect = effect
+
+    def get_effect(self):
+        """return guitar pedal effect type"""
+        return self._effect
+
